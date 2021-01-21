@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react"
 import Navigation from "./Components/NavigationBar/Navigation"
-import ImagesAndLInks from "./Components/ImagesAndLinks/ImagesAndLInks"
+// import ImagesAndLInks from "./Components/ImagesAndLinks/ImagesAndLInks"
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
     
     <div>
       <Navigation/>
-      <ImagesAndLInks/>
+      {/* <ImagesAndLInks/> */}
     </div>
     
   );
