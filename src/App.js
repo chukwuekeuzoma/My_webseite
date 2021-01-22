@@ -8,7 +8,7 @@ function App() {
     
     
     <div>
-      <Navigation/>
+      <Navigation/> 
       {/* <ImagesAndLInks/> */}
     </div>
     

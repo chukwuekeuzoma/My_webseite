@@ -8,7 +8,7 @@
     background :#2c3e50;
     height:80px;
     opacity: 0.5;
-    transition: 1s;
+    /* transition:1s; */
    
 }
 .nav_class_active{
@@ -20,10 +20,9 @@
     width: 100%;
     background :#2c3e50;
     height:80px;
-    transition: 1s;
-   
-
+    /* transition: 1s; */
 }
+
 .contact_resume{
     padding:10px;
     font-size:12px;
@@ -55,6 +54,9 @@ a{
 .display_flex{
     display: flex;
 }
+.display_flex_nav_div{
+    display: flex; 
+}
 .hover{
     background:none;
 }
@@ -84,6 +86,10 @@ a{
     align-content: center !important;
     cursor: pointer;
 }
+.nav_bar_two{
+    display: none;
+}
+
 .icon_classes_dark{
     padding: 10px;
     color:#5e2fcc;
@@ -122,6 +128,7 @@ a{
 .color_two{
     color: #5e2fcc;
 }
+
 .color_three{
     color: yellow;
 }
@@ -145,6 +152,7 @@ a{
     color: white;
     opacity:0.7;
 }
+
 .box{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, 
     rgba(0, 0, 0, 0.22) 0px 15px 12px;  
@@ -152,8 +160,8 @@ a{
     padding: 20px;
 }
 .box:hover{
-    transition: 1s;
-    transform: scale(1.03, 1.04)
+    transition: 1s !important;
+    transform: scale(1.03, 1.04) !important;
 }
 .box_dark{
 
@@ -163,8 +171,8 @@ a{
     background: #1f1f1f;;
 }
 .box_dark:hover{
-    transition: 1s;
-    transform: scale(1.03, 1.04)
+    transition:1s !important;
+    transform: scale(1.03, 1.04) !important;
 }
 .display_flex_three{
     display: flex;
@@ -193,8 +201,11 @@ footer{
     padding: 6px;
     display: flex !important;
     align-content: center !important;
+    justify-content: center !important;
     cursor: pointer;
 }
+
+
 .hover_three{
     background:none;
 }
@@ -202,4 +213,110 @@ footer{
   transition: 0.5s;
   background:rgb(212, 212, 219);
   border-radius:50%;
+}
+
+.nav_bar_down_in, .nav_bar_down_out{
+    display: none;
+}
+
+/* menu for screen size 500px */
+@media screen and (max-width:500px){
+    .display_flex_nav_div,.contact_resume_two{
+        display: none;
+    }
+    .nav_bar_two{
+        display: block;
+        position:absolute;
+        cursor: pointer;
+        right:20px;
+        top:25px;
+        opacity:5;
+    }
+    .nav_bar_down_in{
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        top:80;
+        width:30;
+        background :#2c3e50;
+        z-index:1;
+        right: 0;
+        height:200px;
+        transition: 0.5s !important;
+        justify-content: space-around;
+        align-content: center !important;
+
+    }
+    .nav_bar_down_out{
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        top:80;
+        right:-200px;
+        background :#2c3e50;
+        z-index:1;
+        transition: 0.5s !important;
+        height:200px;
+        justify-content: space-around;
+        align-content: center !important;
+    }
+    .hover_s{
+        background:none;
+    }
+    .hover_s:hover{
+      transition: 0.5s;
+      background:rgb(212, 212, 219);
+      color: #2c3e50;
+      border-radius:4px;
+    }
+    .contact_resume_s{
+        padding:10px;
+        font-size:12px;
+        padding-right:20px;
+        padding-left:20px;
+        color: white;
+        cursor: pointer;
+    }
+    .color_two_s{
+        color: #5e2fcc;
+       display:flex;
+       justify-content: center !important;
+    }
+    .color_three_s{
+        color: yellow;
+    }
+    .hover_three_s{
+        background:none;
+    }
+    .hover_three_s:hover{
+      transition: 0.5s;
+      background:rgb(212, 212, 219);
+      border-radius:50%;
+    }
+    .dark_light_s{
+        padding:6px;
+        display: flex !important;
+        align-content: center !important;
+        justify-content: center !important;
+        cursor: pointer;
+        margin-left: 23px;
+    }
+    .hover,.contact_resume,.color_three,.dark_light,.hover_three,.color_two{
+        display:none;
+    }
+    .nav_class_s{
+        background :#2c3e50;
+        opacity: 0.5;
+        /* transition:1s; */
+        z-index:1;
+    }
+    .nav_class_s_active{
+        background :#2c3e50;
+        /* transition:1s; */
+        z-index:1;
+    }
+    .color_seven{
+        color: white !important;
+        font-size:30px !important;
+    }
 }
