@@ -1,15 +1,13 @@
 import './App.css';
 import React from "react"
-import Navigation from "./Components/NavigationBar/Navigation"
-// import ImagesAndLInks from "./Components/ImagesAndLinks/ImagesAndLInks"
+import Body from "./Components/Body/Body"
 
 function App() {
   return (
     
     
     <div>
-      <Navigation/> 
-      {/* <ImagesAndLInks/> */}
+      <Body/> 
     </div>
     
   );

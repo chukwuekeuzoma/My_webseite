@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import "./Navigation.css"
+import "./Body.css"
 import { Twitter, Instagram, GitHub, LinkedIn, NightsStay, Brightness7, Menu, Clear } from '@material-ui/icons'
 import Tilt from 'react-tilt'
 import Fade from 'react-reveal/Fade'
 
-function Navigation() {
+function Body() {
     const [Navbar, setNavbar] = useState(false)
     const [DarkMode, setDarkMode] = useState(getInitialMode())
     const [Snav, setSnav] = useState(false)
@@ -205,4 +205,4 @@ function Navigation() {
     )
 }
 
-export default Navigation
+export default Body
