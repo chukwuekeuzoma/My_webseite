@@ -91,7 +91,7 @@ function Body() {
                 <div className="display_flex_two margin_top_30">
                     <Fade left delay={3000}>
                         <div className="hover_two">
-                            <a href="#"  rel="noopener noreferrer">
+                            <a href="https://twitter.com/chukwuekemartin" target="_blank" rel="noopener noreferrer">
                                 <Twitter className={DarkMode ? "icon_classes_dark" : "icon_classes"} />
                             </a>
                         </div>
