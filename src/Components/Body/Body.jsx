@@ -44,7 +44,8 @@ function Body() {
                     <a href="mailto:chukwuekeuzoma@gmail.com">
                         <div className="hover contact_resume">Contact</div>
                     </a>
-                    <a href="mailto:chukwuekeuzoma@gmail.com">
+                    <a  href="https://drive.google.com/file/d/1EU-2WE9-sYG2tpaalF5lVOUCOTqqQmIY/view?usp=sharing" target="_blank"
+                          rel="noopener noreferrer">
                         <div className="hover contact_resume" >Resume</div>
                     </a>
                     <div onClick={dark}>
@@ -66,9 +67,12 @@ function Body() {
                     <a href="mailto:chukwuekeuzoma@gmail.com">
                         <div className="hover_s contact_resume_s">Contact</div>
                     </a>
-                    <a href="mailto:chukwuekeuzoma@gmail.com">
-                        <div className="hover_s contact_resume_s" >Resume</div>
+                    <div>
+                    <a href="https://drive.google.com/file/d/1EU-2WE9-sYG2tpaalF5lVOUCOTqqQmIY/view?usp=sharing" target="_blank"
+                          rel="noopener noreferrer">
+                        <div className="hover_s contact_resume_s">Resume</div>
                     </a>
+                    </div>
                     <div onClick={dark}>
                         {DarkMode ? <NightsStay className="color_two_s dark_light_s hover_three_s" />
                             :
@@ -87,7 +91,7 @@ function Body() {
                 <div className="display_flex_two margin_top_30">
                     <Fade left delay={3000}>
                         <div className="hover_two">
-                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://twitter.com/chukwuekemartin" target="_blank" rel="noopener noreferrer">
                                 <Twitter className={DarkMode ? "icon_classes_dark" : "icon_classes"} />
                             </a>
                         </div>
@@ -96,21 +100,21 @@ function Body() {
                     </Fade>
                     <Fade left delay={1000}>
                         <div className="hover_two">
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/martins_oliver.c/" target="_blank" rel="noopener noreferrer">
                                 <Instagram className={DarkMode ? "icon_classes_dark" : "icon_classes"} />
                             </a>
                         </div>
                     </Fade>
                     <Fade right delay={2000}>
                         <div className="hover_two">
-                            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/chukwuekeuzoma" target="_blank" rel="noopener noreferrer">
                                 <GitHub className={DarkMode ? "icon_classes_dark" : "icon_classes"} />
                             </a>
                         </div>
                     </Fade>
                     <Fade right delay={4000}>
                         <div className="hover_two">
-                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/chukwueke-martins-6898981b0/" target="_blank" rel="noopener noreferrer">
                                 <LinkedIn className={DarkMode ? "icon_classes_dark" : "icon_classes"} />
                             </a>
                         </div>
@@ -126,7 +130,7 @@ function Body() {
                         </div>
                         <div className={DarkMode ? "color_six display_flex_two" : "display_flex_two color"}>
 
-                            You've just come across a Electrical and Software engineer  🤓.
+                            You've just come across an Electrical/Electronics and Software Engineer  🤓.
                         <br />
                         Find below few of my works, and a little bit about me.
                     </div>
@@ -141,8 +145,8 @@ function Body() {
                             <h1>Hi, I'm Martins</h1>
                         I'm a frontend  developer.<br />
                         I am currently based in Lagos, Nigeria.
-                        I'm a Graduate of Electrical/Electonics from Enugu State University of Science and Technology.<br />
-                        I'm a massive fan of Javascript(React.js,node,SCSS,CSS and vanilla Javascript)<br />
+                        I'm a Graduate of Electrical/Electonics Engineer from Enugu State University of Science and Technology.<br />
+                        I'm a massive fan of Javascript (React.js, Node.js, SCSS, CSS and Vanilla Javascript)<br />
                         hence I love integrating and building products using Javascript
                         </div>
                     </div>
@@ -154,8 +158,7 @@ function Body() {
                         <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
                             <h1>Technologies</h1>
                      During my years of active development, I have learnt and worked with technologies like Javascript,<br />
-                     React, Node, CSS, SCC3, SCSS,React Redux, HTML e.t.c.<br />
-                     I am a huge practitioner of test driven development and Agile development
+                     React, Node, CSS, CSS3, SCSS,React Redux, HTML e.t.c.<br />
                     </div>
                     </div>
                 </Fade>
@@ -174,7 +177,79 @@ function Body() {
                     <div className={DarkMode ? "box_dark" : "box"}>
                         <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
                             <h1>Martinsgizmo</h1>
-                            APPLICATION GIT REPO
+                            <div>
+                             <a href="https://martinsgizmo.web.app/" target="_blank" 
+                                className={DarkMode?"a_class_dark":"a_class_white"}
+                                rel="noopener noreferrer">
+                                <b>APPLICATION</b>
+                             </a> &nbsp;
+                             <a  href="https://github.com/chukwuekeuzoma/MartinsGizmo-" target="_blank" 
+                                className={DarkMode?"a_class_dark":"a_class_white"}
+                                rel="noopener noreferrer">
+                                <b>GIT REPO</b>
+                             </a>
+                            </div>
+                            Javascript, React.js, CSS3, HTML.
+                        </div>
+                    </div>
+                </Fade>
+            </div>
+            <div className="display_flex_three  margin_top_30">
+                <Fade left delay={1000} duration={1000}>
+                    <div className={DarkMode ? "box_dark" : "box"}>
+                        <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
+                            <h1>Face Detect</h1>
+                            <div>
+                             <a href="https://facedetection-8eb37.web.app/" target="_blank"
+                                className={DarkMode?"a_class_dark":"a_class_white"}
+                                rel="noopener noreferrer">
+                                <b>APPLICATION</b>
+                             </a> &nbsp;
+                             <a  href="https://github.com/chukwuekeuzoma/FaceDetectionProject" target="_blank" 
+                                className={DarkMode?"a_class_dark":"a_class_white"}
+                                rel="noopener noreferrer">
+                                <b>GIT REPO</b>
+                             </a>
+                            </div>
+                            Javascript, React.js, CSS3, HTML.
+                        </div>
+                    </div>
+                </Fade>
+            </div>
+            <div className="display_flex_three  margin_top_30">
+                <Fade left delay={1000} duration={1000}>
+                    <div className={DarkMode ? "box_dark" : "box"}>
+                        <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
+                            <h1>Robo</h1>
+                            <div>
+                             <a href="https://martinsroboapp.web.app/" target="_blank" 
+                                className={DarkMode?"a_class_dark":"a_class_white"}
+                                rel="noopener noreferrer">
+                                <b>APPLICATION</b>
+                             </a> &nbsp;
+                             <a  href="https://github.com/chukwuekeuzoma/MartinsRoboApp" target="_blank"
+                                className={DarkMode?"a_class_dark":"a_class_white"}
+                                 rel="noopener noreferrer">
+                                <b>GIT REPO</b>
+                             </a>
+                            </div>
+                            Javascript, React.js, CSS3, HTML.
+                        </div>
+                    </div>
+                </Fade>
+            </div>
+            <div className="display_flex_three  margin_top_30">
+                <Fade left delay={1000} duration={1000}>
+                    <div className={DarkMode ? "box_dark" : "box"}>
+                        <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
+                            <h1>React & Redux</h1>
+                            <div>
+                             <a  href="https://github.com/chukwuekeuzoma/UsingRedux-Router" 
+                                 className={DarkMode?"a_class_dark":"a_class_white"}
+                                 target="_blank" rel="noopener noreferrer">
+                                <b>GIT REPO</b>
+                             </a>
+                            </div>
                             Javascript, React.js, CSS3, HTML.
                         </div>
                     </div>
@@ -185,9 +260,9 @@ function Body() {
                     <div className={DarkMode ? "box_dark" : "box"}>
                         <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"} >
                             <h1> Interest.</h1>
-                            I have a ton of interests in so many fields some of which are Programming,<br />
-                            Electrical technologies,Astronomical Bodies, Forex trading,
-                            music, entertainment, humans psychology, dogs, entrepreneurship, books,<br />
+                            I have a lot of interests in so many fields, some of which are Programming,<br />
+                            Electrical Technologies,Astronomical Bodies, Forex trading,
+                            Music, Entertainment, Humans Psychology, Dogs, Entrepreneurship, books,<br />
                             art, African culture e.t.c
 
                         </div>
