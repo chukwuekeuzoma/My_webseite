@@ -44,7 +44,7 @@ function Body() {
                     <a href="mailto:chukwuekeuzoma@gmail.com">
                         <div className="hover contact_resume">Contact</div>
                     </a>
-                    <a  href="https://drive.google.com/file/d/1EU-2WE9-sYG2tpaalF5lVOUCOTqqQmIY/view?usp=sharing" target="_blank"
+                    <a  href="https://docs.google.com/document/d/1NZyfgssSAanQYJx3BLLLGe7Q7F89wcF7yg1jPmTZduA/edit?usp=sharing" target="_blank"
                           rel="noopener noreferrer">
                         <div className="hover contact_resume" >Resume</div>
                     </a>
@@ -68,7 +68,7 @@ function Body() {
                         <div className="hover_s contact_resume_s">Contact</div>
                     </a>
                     <div>
-                    <a href="https://drive.google.com/file/d/1EU-2WE9-sYG2tpaalF5lVOUCOTqqQmIY/view?usp=sharing" target="_blank"
+                    <a href="https://docs.google.com/document/d/1NZyfgssSAanQYJx3BLLLGe7Q7F89wcF7yg1jPmTZduA/edit?usp=sharing" target="_blank"
                           rel="noopener noreferrer">
                         <div className="hover_s contact_resume_s">Resume</div>
                     </a>
@@ -158,7 +158,7 @@ function Body() {
                         <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
                             <h1>Technologies</h1>
                      During my years of active development, I have learnt and worked with technologies like Javascript,<br />
-                     React, Node, CSS, CSS3, SCSS,React Redux, HTML e.t.c.<br />
+                     React, Node, CSS,CSS.js,CSS3, SCSS,React Redux, HTML e.t.c.<br />
                     </div>
                     </div>
                 </Fade>
