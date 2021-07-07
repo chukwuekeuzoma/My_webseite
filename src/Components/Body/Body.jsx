@@ -176,6 +176,28 @@ function Body() {
                 <Fade left delay={1000} duration={1000}>
                     <div className={DarkMode ? "box_dark" : "box"}>
                         <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
+                            <h1>Rapidkredit</h1>
+                            <div>
+                             <a href="https://rapidkredit-web-application.web.app" target="_blank" 
+                                className={DarkMode?"a_class_dark":"a_class_white"}
+                                rel="noopener noreferrer">
+                                <b>APPLICATION</b>
+                             </a> &nbsp;
+                             <a  href="https://github.com/chukwuekeuzoma/MartinsGizmo-" target="_blank" 
+                                className={DarkMode?"a_class_dark":"a_class_white"}
+                                rel="noopener noreferrer">
+                                <b>GIT REPO</b>
+                             </a>
+                            </div>
+                            Javascript, React.js, CSS3, HTML.
+                        </div>
+                    </div>
+                </Fade>
+            </div>
+            <div className="display_flex_three  margin_top_30">
+                <Fade left delay={1000} duration={1000}>
+                    <div className={DarkMode ? "box_dark" : "box"}>
+                        <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
                             <h1>Martinsgizmo</h1>
                             <div>
                              <a href="https://martinsgizmo.web.app/" target="_blank" 
