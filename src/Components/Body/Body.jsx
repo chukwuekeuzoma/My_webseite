@@ -3,6 +3,7 @@ import "./Body.css"
 import { Twitter, Instagram, GitHub, LinkedIn, NightsStay, Brightness7, Menu, Clear } from '@material-ui/icons'
 import Tilt from 'react-tilt'
 import Fade from 'react-reveal/Fade'
+import { Content } from "./Content"
 
 function Body() {
     const [Navbar, setNavbar] = useState(false)
@@ -44,8 +45,8 @@ function Body() {
                     <a href="mailto:chukwuekeuzoma@gmail.com">
                         <div className="hover contact_resume">Contact</div>
                     </a>
-                    <a  href="https://docs.google.com/document/d/1NZyfgssSAanQYJx3BLLLGe7Q7F89wcF7yg1jPmTZduA/edit?usp=sharing" target="_blank"
-                          rel="noopener noreferrer">
+                    <a href="https://docs.google.com/document/d/1NZyfgssSAanQYJx3BLLLGe7Q7F89wcF7yg1jPmTZduA/edit?usp=sharing" target="_blank"
+                        rel="noopener noreferrer">
                         <div className="hover contact_resume" >Resume</div>
                     </a>
                     <div onClick={dark}>
@@ -68,10 +69,10 @@ function Body() {
                         <div className="hover_s contact_resume_s">Contact</div>
                     </a>
                     <div>
-                    <a href="https://docs.google.com/document/d/1NZyfgssSAanQYJx3BLLLGe7Q7F89wcF7yg1jPmTZduA/edit?usp=sharing" target="_blank"
-                          rel="noopener noreferrer">
-                        <div className="hover_s contact_resume_s">Resume</div>
-                    </a>
+                        <a href="https://docs.google.com/document/d/1NZyfgssSAanQYJx3BLLLGe7Q7F89wcF7yg1jPmTZduA/edit?usp=sharing" target="_blank"
+                            rel="noopener noreferrer">
+                            <div className="hover_s contact_resume_s">Resume</div>
+                        </a>
                     </div>
                     <div onClick={dark}>
                         {DarkMode ? <NightsStay className="color_two_s dark_light_s hover_three_s" />
@@ -131,9 +132,9 @@ function Body() {
                         <div className={DarkMode ? "color_six display_flex_two" : "display_flex_two color"}>
 
                             You've just come across an Electrical/Electronics and Software Engineer  🤓.
-                        <br />
-                        Find below few of my works, and a little bit about me.
-                    </div>
+                            <br />
+                            Find below few of my works, and a little bit about me.
+                        </div>
 
                     </div>
                 </Fade>
@@ -143,11 +144,11 @@ function Body() {
                     <div className={DarkMode ? "box_dark" : "box"}>
                         <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
                             <h1>Hi, I'm Martins</h1>
-                        I'm a frontend  developer.<br />
-                        I am currently based in Lagos, Nigeria.
-                        I'm a Graduate of Electrical/Electonics Engineer from Enugu State University of Science and Technology.<br />
-                        I'm a massive fan of Javascript (React.js, Node.js, SCSS, CSS and Vanilla Javascript)<br />
-                        hence I love integrating and building products using Javascript
+                            I'm a frontend  developer.<br />
+                            I am currently based in Lagos, Nigeria.
+                            I'm a Graduate of Electrical/Electonics Engineer from Enugu State University of Science and Technology.<br />
+                            I'm a massive fan of Javascript (React.js, Node.js, SCSS, CSS and Vanilla Javascript)<br />
+                            hence I love integrating and building products using Javascript
                         </div>
                     </div>
                 </Fade>
@@ -157,9 +158,9 @@ function Body() {
                     <div className={DarkMode ? "box_dark" : "box"}>
                         <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
                             <h1>Technologies</h1>
-                     During my years of active development, I have learnt and worked with technologies like Javascript,<br />
-                     React, Node, CSS,CSS.js,CSS3, SCSS,React Redux, HTML e.t.c.<br />
-                    </div>
+                            During my years of active development, I have learnt and worked with technologies like Javascript,<br />
+                            React, Node, CSS,CSS.js,CSS3, SCSS,React Redux, HTML e.t.c.<br />
+                        </div>
                     </div>
                 </Fade>
             </div>
@@ -171,112 +172,31 @@ function Body() {
                         </div>
                     </div>
                 </Fade>
-            </div>
-            <div className="display_flex_three  margin_top_30">
-                <Fade left delay={1000} duration={1000}>
-                    <div className={DarkMode ? "box_dark" : "box"}>
-                        <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
-                            <h1>Rapidkredit</h1>
-                            <div>
-                             <a href="https://rapidkredit-web-application.web.app" target="_blank" 
-                                className={DarkMode?"a_class_dark":"a_class_white"}
-                                rel="noopener noreferrer">
-                                <b>APPLICATION</b>
-                             </a> &nbsp;
-                             <a  href="https://github.com/chukwuekeuzoma/MartinsGizmo-" target="_blank" 
-                                className={DarkMode?"a_class_dark":"a_class_white"}
-                                rel="noopener noreferrer">
-                                <b>GIT REPO</b>
-                             </a>
+            </div>{
+                Content.map(({ name, web_link, application_name, git_hub_link, git_hub_name, languages }, index) => (
+                    <div className="display_flex_three  margin_top_30" key={index}>
+                        <Fade left delay={1000} duration={1000}>
+                            <div className={DarkMode ? "box_dark" : "box"}>
+                                <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
+                                    <h1>{name}</h1>
+                                    <div>
+                                        <a href={web_link} target="_blank"
+                                            className={DarkMode ? "a_class_dark" : "a_class_white"}
+                                            rel="noopener noreferrer">
+                                            <b>{application_name}</b>
+                                        </a> &nbsp;
+                                        <a href={git_hub_link} target="_blank"
+                                            className={DarkMode ? "a_class_dark" : "a_class_white"}
+                                            rel="noopener noreferrer">
+                                            <b>{git_hub_name}</b>
+                                        </a>
+                                    </div>
+                                    {languages}
+                                </div>
                             </div>
-                            Javascript, React.js, CSS3, HTML.
-                        </div>
+                        </Fade>
                     </div>
-                </Fade>
-            </div>
-            <div className="display_flex_three  margin_top_30">
-                <Fade left delay={1000} duration={1000}>
-                    <div className={DarkMode ? "box_dark" : "box"}>
-                        <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
-                            <h1>Martinsgizmo</h1>
-                            <div>
-                             <a href="https://martinsgizmo.web.app/" target="_blank" 
-                                className={DarkMode?"a_class_dark":"a_class_white"}
-                                rel="noopener noreferrer">
-                                <b>APPLICATION</b>
-                             </a> &nbsp;
-                             <a  href="https://github.com/chukwuekeuzoma/MartinsGizmo-" target="_blank" 
-                                className={DarkMode?"a_class_dark":"a_class_white"}
-                                rel="noopener noreferrer">
-                                <b>GIT REPO</b>
-                             </a>
-                            </div>
-                            Javascript, React.js, CSS3, HTML.
-                        </div>
-                    </div>
-                </Fade>
-            </div>
-            <div className="display_flex_three  margin_top_30">
-                <Fade left delay={1000} duration={1000}>
-                    <div className={DarkMode ? "box_dark" : "box"}>
-                        <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
-                            <h1>Face Detect</h1>
-                            <div>
-                             <a href="https://facedetection-8eb37.web.app/" target="_blank"
-                                className={DarkMode?"a_class_dark":"a_class_white"}
-                                rel="noopener noreferrer">
-                                <b>APPLICATION</b>
-                             </a> &nbsp;
-                             <a  href="https://github.com/chukwuekeuzoma/FaceDetectionProject" target="_blank" 
-                                className={DarkMode?"a_class_dark":"a_class_white"}
-                                rel="noopener noreferrer">
-                                <b>GIT REPO</b>
-                             </a>
-                            </div>
-                            Javascript, React.js, CSS3, HTML.
-                        </div>
-                    </div>
-                </Fade>
-            </div>
-            <div className="display_flex_three  margin_top_30">
-                <Fade left delay={1000} duration={1000}>
-                    <div className={DarkMode ? "box_dark" : "box"}>
-                        <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
-                            <h1>Robo</h1>
-                            <div>
-                             <a href="https://martinsroboapp.web.app/" target="_blank" 
-                                className={DarkMode?"a_class_dark":"a_class_white"}
-                                rel="noopener noreferrer">
-                                <b>APPLICATION</b>
-                             </a> &nbsp;
-                             <a  href="https://github.com/chukwuekeuzoma/MartinsRoboApp" target="_blank"
-                                className={DarkMode?"a_class_dark":"a_class_white"}
-                                 rel="noopener noreferrer">
-                                <b>GIT REPO</b>
-                             </a>
-                            </div>
-                            Javascript, React.js, CSS3, HTML.
-                        </div>
-                    </div>
-                </Fade>
-            </div>
-            <div className="display_flex_three  margin_top_30">
-                <Fade left delay={1000} duration={1000}>
-                    <div className={DarkMode ? "box_dark" : "box"}>
-                        <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
-                            <h1>React & Redux</h1>
-                            <div>
-                             <a  href="https://github.com/chukwuekeuzoma/UsingRedux-Router" 
-                                 className={DarkMode?"a_class_dark":"a_class_white"}
-                                 target="_blank" rel="noopener noreferrer">
-                                <b>GIT REPO</b>
-                             </a>
-                            </div>
-                            Javascript, React.js, CSS3, HTML.
-                        </div>
-                    </div>
-                </Fade>
-            </div>
+                ))}
             <div className="display_flex_three  margin_top_30">
                 <Fade left delay={1000} duration={1000}>
                     <div className={DarkMode ? "box_dark" : "box"}>
