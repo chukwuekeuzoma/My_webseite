@@ -159,7 +159,7 @@ function Body() {
                         <div className={DarkMode ? "color_six dispaly_flex_four" : "dispaly_flex_four color"}>
                             <h1>Technologies</h1>
                             During my years of active development, I have learnt and worked with technologies like Javascript,<br />
-                            React, Node, CSS,CSS.js,CSS3, SCSS,React Redux, HTML e.t.c.<br />
+                            PWA, React, Node, CSS,CSS.js,CSS3, SCSS,React Redux, HTML e.t.c.<br />
                         </div>
                     </div>
                 </Fade>

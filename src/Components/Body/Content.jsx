@@ -1,5 +1,15 @@
 
 export const Content = [
+
+        {
+            name:"Weather APP",
+            web_link:"https://weather-pwa-34fec.web.app/",
+            application_name:"PWA",
+            git_hub_link:"https://github.com/chukwuekeuzoma/WeatherPWA",
+            git_hub_name:"GIT REPO",
+            languages:"PWA,Javascript, React.js, SCSS, CSS.js, HTML."
+        },
+
         {
             name:"Kolmereport",
             web_link:"https://kolmereport.web.app/#/",
