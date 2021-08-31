@@ -14,7 +14,7 @@ export const Content = [
             name:"Kolmereport",
             web_link:"https://kolmereport.web.app/#/",
             application_name:"APPLICATION",
-            git_hub_link:"",
+            // git_hub_link:"",
             git_hub_name:"GIT REPO",
             languages:"Javascript, React.js, SCSS, CSS.js, HTML."
         },
@@ -23,7 +23,7 @@ export const Content = [
            name:"Rapidkredit",
            web_link:"https://rapidkredit-web-application.web.app",
            application_name:"APPLICATION",
-           git_hub_link:"",
+        //    git_hub_link:"",
            git_hub_name:"GIT REPO",
            languages:"Javascript, React.js, SCSS,CSS.js, HTML."
        },
