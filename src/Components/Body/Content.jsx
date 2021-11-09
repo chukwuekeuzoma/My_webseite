@@ -1,4 +1,14 @@
 export const Content = [
+
+  {
+    name: "MedonCall",
+    web_link: "https://medoncall-fab0f.web.app/#/",
+    application_name: "Landing Page",
+    // git_hub_link: "",
+    git_hub_name: "GIT REPO",
+    languages: "Javascript, React.js, SCSS, CSS.js, HTML.",
+  },
+
   {
     name: "Weather APP",
     web_link: "https://weather-pwa-34fec.web.app/",
